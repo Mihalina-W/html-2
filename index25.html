@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+           <title>Пример 25</title>
+    </head>
+    <body>
+        <script>
+                function isValid(o) {
+                    return /^[0-9]+$/.test(o)
+                }
+                let x,y;
+                function inputX() {
+                    x = prompt('Введите число x: ');
+                }
+                function inputY() {
+                    y = prompt('Введите число y: ');
+                }
+                inputX();
+                inputY();
+                while (!isValid(x)){
+                    alert('Вы ввели не число, введите число x заного')
+                    inputX();
+                }
+                x = parseInt(x)
+                while (!isValid(y)){
+                    alert('Вы ввели не число, введите число y заного')
+                    inputY();
+                }
+                y = parseInt(y)
+                let z;
+                z=+x;
+                i=2;
+                while(i<=y) {
+                                 z=z*x;
+                                i++;
+                               }
+                alert('Число '+x+' в степени '+y+' равно '+z);
+                location.reload();
+        </script>
+    </body>
+</html>

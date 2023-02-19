@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Пример 26</title>
+    </head>
+    <body>
+            <script>
+                    function isValid(o) {
+                    return /^[0-9]+$/.test(o)
+                    }
+
+                    let n;
+
+                    function inputN() {
+                        n = prompt('Введите число n: ');
+                    }
+                    inputN();
+
+                    while  (!isValid(n)){
+                        alert('Вы ввели не число, попробуйте снова')
+                        inputN();
+                    }
+                    n = parseInt(n);
+
+                    let z=1; //z хранит результат n!
+                    if(n>1){
+                                let i=2
+                                do {
+                                        z=z*i;
+                                        i++;
+                                    }
+                                while (i<=+n);
+                                }
+                    alert('Факториал числа '+n+' равен '+z);
+                    location.reload();
+            </script>
+    </body>        
+</html>

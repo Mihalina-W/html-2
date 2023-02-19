@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Пример c грибочками</title>
+    </head>
+    <body>
+            <script>
+                let priznak1 = prompt('Напишите признак гриба по цвету(белый, красный, желтый, коричневый)');
+                let priznak2 = prompt('Есть ли юбочка у грибочка?(есть, нет)');
+                switch(priznak1){
+                    case "белый":
+                        switch(priznak2){
+                            case "нет": 
+                            alert('Поздравляю, вы нашли белый гриб');
+                            break;
+                            default:
+                                alert('Вам нужно быть повнимательнее с грибами, неучи');
+                        }
+                    break;
+                    case "красный":
+                        switch(priznak2){
+                            case "есть": 
+                            alert('А не мухомор ли это, гений?');
+                            break;
+                            case "нет":
+                            alert('По-моему вы нашли подосиновик!');
+                            break;
+                            default:
+                                alert('Вам нужно быть повнимательнее с грибами, неучи');
+                        }
+                    break;
+                    default:
+                        alert('Вам нужно быть повнимательнее с грибами, неучи');
+                }
+                location.reload();
+            </script>
+    </body>
+</html>
